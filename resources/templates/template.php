@@ -1,14 +1,3 @@
-<?php
-/*
-
-Template base del proyecto para no repetir código
-Son necesarias las variables
-  $titulo
-  $ruta_contenido
-
-*/
-?>
-
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -25,7 +14,7 @@ Son necesarias las variables
       require("$ROOT/resources/templates/navegacion.php");
      ?>
     <main class="contenedor">
-      <?php      
+      <?php
           require("$ROOT/resources/templates/contenido$ruta_contenido");
        ?>
     </main>

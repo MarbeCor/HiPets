@@ -87,7 +87,7 @@ if(isset($_COOKIE['recuerdame'])){
   $token = $_COOKIE['recuerdame'];
   $resultado_token = TokenManager::getIdyTipo($token);
 
-  session_start();
+  
   $_SESSION['id']=$resultado_token['usuario_id'];
   $_SESSION['tipo_cliente'] = $resultado_token['tipo'];
   if($resultado_token['tipo'] == "mascota"){

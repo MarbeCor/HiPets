@@ -21,9 +21,9 @@ $resultados = EmpresaManager::getAllById($id);
 
       <img  src="<?=$resultados[0]->getFoto()?>" alt="">
       <h2><?=$resultados[0]->getNombre()?></h2><br>
-      <h4><?=$resultados[0]->getLocalidad()?></h4><br>
-      <h4><?=$resultados[0]->getCP()?></h4><br>
-      <h4><?=$resultados[0]->getTelefono()?></h4><br>
+      <h4>Dirección: <?=$resultados[0]->getLocalidad()?></h4><br>
+      <h4>CP: <?=$resultados[0]->getCP()?></h4><br>
+      <h4>Teléfono: <?=$resultados[0]->getTelefono()?></h4><br>
 
       <a href="editarPerfil.php">
         <input class="enviar" type="submit" name="editar" value="Editar perfil">
