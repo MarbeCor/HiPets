@@ -1,0 +1,81 @@
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+}
+/* ------------------------------- CONTENEDOR -------------------------*/
+.contenedor{
+  width: 100%;
+  flex: 1;
+}
+
+/* ------------------------------- HEADER -----------------------------*/
+ header{
+  background-color: #ff8c00;
+  padding: 5px;
+}
+header a{
+  text-decoration: none;
+}
+header a > img{
+    width: 60px;
+}
+
+/* ------------------------------- MENÜ -----------------------------*/
+
+.menu{background-color: #f0f2f5;padding: 0 10px;}
+.menu > ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  width: 100%;
+}
+.menu ul li:hover{border-bottom: solid 2px #ff8c00;}
+.menu ul li a{
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+  color: #6a8776;
+  font-weight: bold;
+}
+.menu form{
+  display: inline-block;
+  padding: 6px;
+  font-weight: bolder;
+}
+
+.menu a:visited,.contenedor .menu a:link{
+  color: black;
+}
+.menu ul .logout{
+  margin-left:  auto;
+}
+/* ------------------------------- FOOTER -----------------------------*/
+
+footer{
+  background-color: #c4c4c4;
+  width: 100%;
+
+}
+footer ul {
+  width: 50%;
+  margin: auto;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer >  ul li{flex: 0 0 30%;}
+
+footer >  ul li a {
+  text-decoration: none;
+  padding: 0.5em;
+  color: #325541;/*color verde*/
+}
+
+.error{
+  color: red;
+}

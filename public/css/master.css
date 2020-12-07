@@ -1,0 +1,404 @@
+@import "reset.css";
+@import "general.css";
+
+/* ------------------------------- LOGIN -----------------------------*/
+/*CONTENEDOR DEL LOGIN*/
+.contenedor_del_login{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.lateralFotoPerros {flex: 0 0 50%}
+.lateralFormLogin{flex:0 0 45%;}
+.lateralFotoPerros  img{width: 100%;}
+.lateralFormLogin h1{
+  color:#325541;
+  text-align: center;
+  width: 100%;
+  margin: 30px 0 0 0;
+}
+
+/*FORMULARIO LOGIN*/
+.lateralFormLogin .form_login {
+  width: 50%;
+  border-bottom: solid 1px #023116;
+  margin: 2em auto;
+
+}
+.form_login p{
+  margin-top: 15px;
+  text-align: center;
+}
+.form_login input{
+  text-align: center;
+  border: 1px solid #219653;
+  height: 35px;
+  width: 20em;
+  border-radius: 3px;
+
+}
+.form_login ::placeholder{
+  color:#ff8c00;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#submit_btn{
+  background-color: grey;
+  border: 1px solid #219653;
+  width: 14.9em;
+  font-weight: bold;
+  font-size: 20px;
+  color:white;
+  height: 40px;
+  border-radius: 3px;
+  letter-spacing: 2px;
+}
+#submit_btn:hover{background-color: #ff8c00;}
+
+.recuerdame{margin:1em 0 2em 0 ;}
+
+#recuerdame{width: 30px;text-align: center;vertical-align: middle;height: auto;}
+
+.contenedor_del_login .Registro_RecuperaPass  a {
+  text-decoration: none;
+  color:#023116;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ------------------------------- Formularios en general -----------------------------*/
+.formulario{
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 10px;
+}
+.formulario > h2{
+  text-align: center;
+  width: 100%;
+  margin: 20px 0;
+  color: #6a8776;
+}
+.formulario .error{text-align: center;width: 100%;}
+
+ .formulario p{
+  display: flex;
+  flex-wrap:  wrap;
+  margin-bottom: 1em;
+}
+
+
+.formulario p label{
+  flex: 0 1 10.5em;
+  margin-right: 0.8em;
+  text-align: right;
+
+}
+.formulario p input{
+  flex: 1 0 auto;
+  border: 1px solid #219653;
+  height: 35px;
+  border-radius:3px;
+}
+.formulario p input[type="submit"]{background-color: #ff8c00;color: white; font-size: 16px; letter-spacing: 2px;font-weight: bold;}
+.formulario p textarea{  flex: 1 0 auto;}
+.formulario .divRadios{text-align: center;}
+/*registro.php*/
+.fomulario_registro .registro_tipo_cliente{width: 30%;margin: 4em auto;}
+.fomulario_registro .registro_tipo_cliente p{text-align: center;margin-bottom: 20px;}
+.fomulario_registro > .registro_tipo_cliente > p input[type="submit"]{
+  width: 8em;
+  border: 1px solid #219653;
+  height: 35px;
+  border-radius:3px;
+}
+
+/*enviarCorreo.php*/
+.notificaciones{  width: 50%;  margin:4em auto;}
+.notificaciones h2{color: #6a8776;}
+
+
+/* ------------------------------- FERFIL MASCOTA -------------------------*/
+
+.contenedorPerfilMascota{  width: 60%;  margin:2em auto;}
+
+.contenedorPerfilMascota .cabeceraPerfil .fotosYseguidores{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:0 20px;
+}
+
+.contenedorPerfilMascota .cabeceraPerfil .fotosYseguidores img{
+  width: 100px;
+  height: 100px;
+  border: solid 2px white;
+  border-radius: 50%;
+}
+.contenedorPerfilMascota .cabeceraPerfil .fotosYseguidores h3{  text-align: center;  align-self: center;}
+.contenedorPerfilMascota .cabeceraPerfil .fotosYseguidores h3 a{  text-decoration: none;  color:#ff8c00;}
+.contenedorPerfilMascota .cabeceraPerfil .fotosYseguidores h3 span{  color:#023116;}
+.contenedorPerfilMascota .cabeceraPerfil .datosMascota{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contenedorPerfilMascota .cabeceraPerfil .datosMascota .info{  flex: 0 0 30%;}
+.contenedorPerfilMascota .cabeceraPerfil .datosMascota .info p:first-of-type{  font-weight: bold;  color:#023116;}
+.contenedorPerfilMascota .cabeceraPerfil .datosMascota .info p:last-of-type::before{  content: "Dueño: ";  font-weight: bold;}
+.contenedorPerfilMascota .cabeceraPerfil .datosMascota .info{  flex: 0 0 30%;  padding: 20px;}
+
+.contenedorPerfilMascota .cabeceraPerfil .datosMascota .botonesPerfil{
+  flex: 0 0 65%;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.contenedorPerfilMascota .cabeceraPerfil .datosMascota .botonesPerfil a{  width: 10em;}
+
+.contenedorPerfilMascota .cabeceraPerfil .datosMascota .botonesPerfil a input{
+  width: 100%;
+  border: 1px solid #219653;
+  height: 35px;
+  border-radius:3px;
+  font-weight: bold;
+  color:white;
+  font-size: 1em;
+  background-color: grey;
+}
+/* ------------------------------- PUBLICACIONES-------------------------*/
+.contenedorPublicaciones{  margin:2em auto;width: 60%;border: solid 1px grey; background-color: #f0f2f5;border-radius: 5px;}
+
+.publicacion .publicacionCabecera{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+.publicacion .publicacionCabecera > div{ flex: 0 0 60px;}
+
+.publicacion .publicacionCabecera > div > img{
+  width: 80px;
+  height: 80px;
+  border:solid 2px white;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.publicacion .publicacionCabecera > div > span{
+  font-weight: bold;
+  color:#023116;
+  font-size: 1.2em;
+}
+.publicacion .publicacionCabecera > div > p{  color:#023116;  font-size: 1em;}
+.publicacion .publicacionCabecera > a {  align-self: center;}
+.publicacion .publicacionCabecera > a img{  width:30px;  height: 25px; }
+.publicacion .publicacionCuerpo{  text-align: justify;  padding: 20px;}
+
+.publicacion .publicacionCuerpo p{font-size: 1em;}
+.publicacion .publicacionCuerpo img{width:100%;margin: auto;display: block;max-width: 100%;}
+.publicacion  .publicacionFooter{
+  width: 80%;
+  margin:15px auto;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+   padding: 20px 0;
+}
+.publicacion  .publicacionFooter a{text-decoration: none;color:#023116;}
+.publicacion  .publicacionFooter span{text-decoration: none;color:#023116;}
+
+/*===========Comentarios===========*/
+.comentarioUnaLinea > img{
+  width:80px;
+  height: 80px;
+  vertical-align: middle;
+}
+.comentarioUnaLinea > img{  margin-bottom: 5px;}
+
+/*============================= Distancia kilometros ============================*/
+.p_kms{
+  text-align: center;
+  font-size: .8em;
+  color:dimgrey;
+}
+/*============================= INICIO ============================*/
+.contendor_inicio{
+  overflow: hidden;
+}
+
+/* ------------------------------- Nuevo anuncio formulario -------------------------*/
+.totalAPagar{
+  text-align: center;
+  width: 50%;
+  margin:1.5em auto;
+}
+.totalAPagar span{color:#FF8C00;}
+
+
+/*======== ANUNCIOS =======*/
+.contenedor_anuncios {
+    width: 90%;
+    margin: 0 auto;
+    overflow: auto;
+    margin-bottom: 3em;
+}
+.contenedor_anuncios h1 {
+    text-align: center;
+    color: color:#023116; /*verde*/
+    margin: 1em 0;
+}
+  .anuncios {
+    width: 30%;
+    border: solid 0.3em #FF8C00; /*naranja*/
+    float: left;
+    margin: 0 1.6%;
+    margin-bottom: 1em;
+  }
+  .anuncios h5 {
+    float: left;
+    margin: 1em;
+    text-align: center;
+  }
+
+  .anuncios span{
+    color: gray;
+  }
+  .anuncios img{
+    width: 100%;
+  }
+/* ------------------------------- PERFIL CLIENTE -----------------------------*/
+.contenedorPerfilCliente{
+  width: 50%;
+  margin: 1.5em auto;
+  text-align: center;
+}
+.contenedorPerfilCliente img{width: 120px; border: solid 2px white; border-radius: 50%;}
+.contenedorPerfilCliente input{
+  border: 1px solid #219653;
+  height: 35px;
+  border-radius:3px;
+  font-weight: bold;
+  color:white;
+  font-size: 1em;
+  background-color: grey;
+}
+/* ------------------------------- AMIGOS -----------------------------*/
+  .contenedor_amigos {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 3em;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:flex-start;
+  }
+  .contenedor_amigos h1 {
+      text-align: center;
+      color: #6a8776; /*verde*/
+      margin: 1em 0;
+      flex: 0 0 100%;
+  }
+  .amigos {
+    flex: 0 0 12em;
+    height: 12em;
+    border: solid 0.3em #FF8C00; /*naranja*/
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .amigos .amigosCabecera{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding: 5px;
+  }
+  .amigos .amigosCabecera p{
+    color: #6a8776;
+    font-weight: bold;
+  }
+  .amigos .amigosCabecera a button{
+    border: 1px solid #219653;
+    border-radius:3px;
+    font-size: 1em;
+  }
+  .amigos .amigosImagen {
+    text-align: center;
+  }
+ .amigos .amigosImagen img{
+   width: 120px;
+
+ }
+
+/* ------------------------------- INICIO -----------------------------*/
+.contendor_inicio{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contendor_inicio .c_actividad,.contendor_inicio .c_anuncios{
+  flex: 0 0 20%;
+  margin-top: 2em;
+  padding: 10px;
+}
+/*inicio publicaciones*/
+.contendor_inicio .c_publicaciones {	flex: 0 0 56%;}
+.contendor_inicio .c_publicaciones .contenedorPublicaciones{width: 75%;}
+/*inicio actividades*/
+.contendor_inicio .p {color:#023116;text-align: center;font-size: 1.3em;font-weight: bolder;}
+.c_actividad .actividad  H4{color: #ff8c00;}
+.c_actividad .actividad{border-bottom: solid 2px #023116;text-align: center;font-size: 1em;margin: 10px 0;}
+.c_actividad .actividad  P{text-align: left;}
+.c_actividad .actividad P span{color:#023116;font-size: 1em;font-weight: bolder;}
+
+/*inicio publicidad*/
+.contendor_inicio .c_anuncios .publicidad{border-bottom: solid 2px #023116;text-align: center;font-size: .8em;margin: 10px 0;}
+.contendor_inicio .c_anuncios .publicidad img{width: 60%;border:solid;margin: 10px 0;}
+.contendor_inicio .c_anuncios .publicidad span{color:#023116;font-size: 1em;font-weight: bolder;}
+/* ------------------------------- ACTIVIDADES -----------------------------*/
+
+/*Botones*/
+.btnsActividad{
+  text-align: center;
+}
+.botonActividad{
+  background-color: #27ae60; /*COLOR VERDE*/
+  padding: 0.5em;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin: 0.7em 0.1em;
+  border-radius: 5px;
+}
+
+.contenedor_actividades { width: 80%;margin: auto;}
+.contenedor_actividades h1{text-align: center;color:#325541;}
+.contenedor_actividades > .c_actividad {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.contenedor_actividades > .c_actividad .actividad{
+  border: solid 2px #ff8c00;
+  border-radius: 5px;
+  flex: 0 0 14em;
+  padding: 10px;
+}
+.contenedor_actividades > .c_actividad .actividad h4{color:#325541;}
+.contenedor_actividades > .c_actividad .actividad form input{
+  border: 1px solid #219653;
+  height: 35px;
+  border-radius:3px;
+  font-weight: bold;
+  color:white;
+  font-size: 1em;
+  background-color: grey;
+}
+/* ------------------------------- COMENTARIOS OCULTOS -----------------------------*/
+.oculto{  display: none;}

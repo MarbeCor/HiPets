@@ -1,0 +1,16 @@
+cargar bd
+/Escritorio/repositorioLocal/Proyecto_servidor/resources>$
+sudo mysql < permisos.sql
+
+mysql - u admin -p1234 hipets < hipets_db_16.sql
+
+
+cargar servicio
+bin/ruerver.sh
+
+
+FALTA
+=====
+- Formulario de crear actividad -> css
+- Comentarios -> css
+- Footer en sticky
